@@ -1,4 +1,4 @@
 "use strict"
 
-console.log("This is film pgotography portfolio page")
+console.log("This is film photography portfolio page")
 

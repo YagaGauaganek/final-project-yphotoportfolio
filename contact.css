@@ -1,0 +1,42 @@
+* {
+    /*box-sizing: border-box;*/
+    font-family: 'Courier New', Courier, monospace
+}
+
+legend {
+    margin-bottom: 1 rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid darkslategrey;
+}
+
+fieldset,
+legend {
+    margin-bottom: 1rem;
+}
+fieldset input:last-of-type {
+    margin-bottom: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+/*.inline input {
+    display: inline
+}*/
+
+button[type="submit"] {
+    background-color: darkslategray;
+    border: none;
+    padding: 0.5rem 1 rem;
+    border-radius: 4px;
+}
