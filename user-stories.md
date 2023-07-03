@@ -17,4 +17,29 @@ As a user, I should be able to view high-quality, visually appealing images that
 - potential collaborators
 - potential curators
 
-MPV
+## MPV
+
+### User stories - Priority
+
+### User stories - Strech Goals
+
+### Project Domain/Data models
+1. submit form
+2. pick me - random pick/chart
+3. local storage
+4. additional - light and dark mode
+
+### Wireframe
+**Home**  
+![Home](images2/home.jpg)  
+
+**About**  
+![About](images2/about.jpg)  
+
+**Pick Me - Voting + Chart**  
+![Pick Me](<images2/pick me.jpg>)  
+
+**Contact**  
+![Alt text](<images2/contact submit.jpg>)  
+
+
