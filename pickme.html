@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaga Galganek Portfolio</title>
     <meta name="">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -27,26 +28,16 @@
     </div>
     </header>
     <main>
-       <!-- <h2>Contact</h2> -->
-        <form id="addPhotoForm">
-           <legend>Contact with me</legend>
-
-           <label for="name">Name</label>
-           <input type="text" id="name" name="name" required>
-
-           <!-- <label for="">Surname</label>
-           <input type="text"> -->
-
-           <label for="email">Email Address</label>
-           <input type="email" id="email" name="email" required>
-
-           <label for="message">Message</label>
-           <textarea type="message" name="message" required></textarea>
-
-           <input type="submit" value="Send">
-        </form>
+        <section>
+        <img class="pickme"/>
+        <img class="pickme"/>
+        </section>
+        <div class="button">View Results</div>
+        <div>
+            <canvas id="chart"></canvas>
+        </div>
     </main>
     <footer>&#169 Jaga Galganek</footer>
-    <script src="contact.js"></script>
+    <script src="pickme.js"></script>
 </body>
 </html>

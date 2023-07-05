@@ -42,3 +42,4 @@ As a user, I should be able to view high-quality, visually appealing images that
 - potential collaborators
 - potential curators
 
+create a class for the light/dark mode

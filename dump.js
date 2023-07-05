@@ -1,8 +1,7 @@
-// "use strict"
+"carousel v 1" 
+console.log("This is film photography portfolio page")
 
-// console.log("This is film photography portfolio page")
-
-const slidesContainer = document.querySelector(".carousel-inner");
+const slidesContainer = document.querySelector(".slides-container");
 const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");

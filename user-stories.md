@@ -28,9 +28,7 @@ As a user, I should be able to view high-quality, visually appealing images that
 ### User stories - Strech Goals
 1. *As a photographer*, I should be able to showcase my photography style and personal brand through the overall design and aesthetics of the website.  
 2. *As a user*, I should be able to browse through different categories of photos.  
-3. 
-4. 
-5. *As a photographer*, I should have the ability to update and manage the portfolio content easily, including adding new photos, editing existing photos, and organizing them into categories.
+3. *As a photographer*, I should have the ability to update and manage the portfolio content easily, including adding new photos, editing existing photos, and organizing them into categories.
 
 
 ### Project Domain/Data models
