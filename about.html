@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yaga Galganek Portfolio - About</title>
     <meta name="description" content="The About Us page for a Wedding inspiration site.">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- <link rel="stylesheet" href="header.css"> -->
+    <!-- <link rel="stylesheet" href="contact.css"> -->
 </head>
 <body>
     <header>
@@ -21,14 +24,54 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="pickme.html">PICK ME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <!-- <li><a href="contact.html">CONTACT</a></li> -->
             </ul>
         </nav>
     </div>
     </header>
     <main>
-        
+       <section>
+        <h2>About Yaga</h2>
+        <p>Polish film photographer, based in Suffolk, UK.
+            She shoots film since her teenage years. Her first camera was soviet Zenit-E. 
+            At the moment she uses 35mm - Pentax ME super and medium format - Pentax 6x7. 
+            Her interest is focused around portrait where she can express herself. 
+            Main motif of her photography is expression of melanchol. 
+            Models on her phts are strong and vulnerable at the same of time. 
+            Yaga is experimenting with double exposures as well as with cyanotype print techniques in her work.</p>
+        <h3>Features:
+            <ul>
+                <li><a href="https://www.vogue.com/photovogue/photographers/207945">Photo VOGUE</a></li>
+                <li><a href="https://www.instagram.com/international.film.swap.group/?hl=en">International Film Swap</a></li>
+                <li><a href="https://www.lomography.com/magazine/">Lomography</a></li>
+            </ul>
+        </h3>
+
+       </section> 
+       <div>
+       <section>
+       <form id="addPhotoForm">
+        <legend>Contact with me</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- <label for="">Surname</label>
+        <input type="text"> -->
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea type="message" name="message" required></textarea>
+
+        <input type="submit" value="Send">
+     </form>
+    </div>
+    </section>
     </main>
+    <!-- <script src="headertest.js"></script> -->
+    <script src="contact.js"></script>
     <footer>&#169 Jaga Galganek</footer>
 </body>
 </html>

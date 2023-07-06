@@ -1,9 +1,9 @@
-// "use strict"
+"use strict"
 
-// console.log("This is film photography portfolio page")
+console.log("This is film photography portfolio page")
 
 const slidesContainer = document.querySelector(".carousel-inner");
-const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+const slideWidth = 500;
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 

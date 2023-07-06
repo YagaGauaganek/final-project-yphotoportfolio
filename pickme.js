@@ -19,6 +19,7 @@ function getRandomNumber() {
 function Film(name, src) {
     this.name = name;
     this.src = src;
+    // this.alt = name;
     this.clicks = 0;
     this.views = 0;
     allPhotos.push(this);
@@ -35,8 +36,10 @@ function renderPhotos() {
 
     img1.src = allPhotos[photo1].src;
     img2.src = allPhotos[photo2].src;
-    img1.alt = allPhotos[photo1].alt;
-    img2.alt = allPhotos[photo2].alt;
+    img1.alt = allPhotos[photo1].name;
+    img2.alt = allPhotos[photo1].name;
+    // img1.alt = allPhotos[photo1].alt;
+    // img2.alt = allPhotos[photo2].alt;
     allPhotos[photo1].views++;
     allPhotos[photo2].views++;
 }
@@ -76,17 +79,17 @@ function renderResults() {
     }
 }
 
-const f1 = new Film("Fay covering face", "images/f1.jpg");
-const a1 = new Film("Ayla with hands up", "images/a1.jpg");
-const all = new Film("Ala within dunes", "images/all.jpg");
-const k2 = new Film("Karolina in flowers", "images/k2.jpg");
-const l2 = new Film("Lauren - double exposure", "images/l2.jpg");
-const move2 = new Film("Roksana - long exposure - black and white", "images/move2.jpg");
-const shanice2 = new Film("Shanice - mushroom girl", "images/shanice2.jpg");
-const r6 = new Film("Roksana - lomochrome turqoise", "images/r6.jpg");
-const q4 = new Film("Quinn on the box", "images/q2.jpg");
-const p1 = new Film("Polly with cigarette", "images/p1.jpg");
-const p3 = new Film("Polly and jar with eyes ", "images/p3.jpg");
+const f1 = new Film("Fay-covering-face", "images/f1.jpg");
+const a1 = new Film("Ayla-with-hands-up", "images/a1.jpg");
+const all = new Film("Ala-within-dunes", "images/all.jpg");
+const k2 = new Film("Karolina-in-flowers", "images/k2.jpg");
+const l2 = new Film("Lauren-double-exposure", "images/l2.jpg");
+const move2 = new Film("Roksana-on-move", "images/move2.jpg");
+const shanice2 = new Film("Shanice-mushroom-girl", "images/shanice2.jpg");
+const r6 = new Film("Roksana-lomochrome-turqoise", "images/r6.jpg");
+const q4 = new Film("Quinn-on-the-box", "images/q2.jpg");
+const p1 = new Film("Polly-with-cigarette", "images/p1.jpg");
+const p3 = new Film("Polly-and-jar-with-eyes", "images/p3.jpg");
 
 renderPhotos();
 
@@ -103,9 +106,9 @@ function renderChart() {
         photoClicks.push(allPhotos[i].clicks);
     }
 
-    // console.log(photoNames);
-    // console.log(photoViews);
-    // console.log(photoClicks);
+    console.log(photoNames);
+    console.log(photoViews);
+    console.log(photoClicks);
 
     const data = {
         labels: photoNames,
@@ -138,22 +141,39 @@ function renderChart() {
 }
 
 function setLocalStorage() {
-    localStorage.setItem("film" JSON.stringify(allPhotos));
+    localStorage.setItem("film", JSON.stringify(allPhotos));
+
 }
 
 function checkLocalStorage() {
     const localFilm = JSON.parse(localStorage.getItem("film"));
-    if (local) {
+    //console.log(localFilm)
+    if (localFilm) {
         allPhotos = localFilm;
     } else {
+        console.log("new photo")
+        const newFilmRange = [
+        "f1.jpg",
+      "a1.jpg",
+      "all.jpg",
+      "k2.jpg",
+      "l2.jpg",
+      "move2.jpg",
+      "shanice2.jpg",
+      "r6.jpg",
+      "q4.jpg",
+      "p1.jpg",
+      "p3.jpg",
+        ];
         for (let i = 0; i < newFilmRange.length; i++) {
             new Film(
                 newFilmRange[i],
-                `img/` + newFilmRange[i] + `jpg`
+                // `images/${newFilmRange[i].toLowerCase().replace(/ /g, "-")}.jpg`
+                `images/${newFilmRange[i]}`
             );
         }
     }
-    }
+}
 checkLocalStorage();
 renderPhotos();
 
