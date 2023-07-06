@@ -145,3 +145,19 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
+.animation {
+    width: 400px;
+    height: 40px;
+    background-color: palevioletred;
+    animation-name: example;
+    animation-duration: 4s;
+    margin-top: 1rem;
+  }
+  
+  @keyframes example {
+    0%   {background-color: palevioletred;}
+    25%  {background-color: aquamarine;}
+    50%  {background-color: palegoldenrod;}
+    100% {background-color: skyblue;}
+}
+
