@@ -51,7 +51,7 @@ header {
 .header-container {
     font-family: 'Yatra One', cursive;
     font-size: 3em;
-    
+    margin: 2rem;    
 }
 
 .navbar {
@@ -72,8 +72,8 @@ nav li {
 
 a {
     color: black;
-    display: flex;
-    align-items: flex-end;
+    /* display: flex; */
+    /* align-items: flex-end; */
 
 }
 

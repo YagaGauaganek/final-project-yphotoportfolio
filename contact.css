@@ -79,3 +79,18 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
+.about-header {
+    text-align: center;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.tog {
+    width: 50%;
+    height: 50%;
+    /* object-fit: cover; */
+    /* display: flex; */
+    flex-direction: column;
+}
