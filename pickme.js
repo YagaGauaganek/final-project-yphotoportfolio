@@ -77,17 +77,16 @@ function renderResults() {
 }
 
 const f1 = new Film("Fay covering face", "images/f1.jpg");
-const a1 = new Film("Ayla with hands up - black and white", "images/a1.jpg");
+const a1 = new Film("Ayla with hands up", "images/a1.jpg");
 const all = new Film("Ala within dunes", "images/all.jpg");
-const k2 = new Film("Karolina in flowers - double exposure", "images/k2.jpg");
-const l2 = new Film("Lauren - double exposure - black and white", "images/l2.jpg");
+const k2 = new Film("Karolina in flowers", "images/k2.jpg");
+const l2 = new Film("Lauren - double exposure", "images/l2.jpg");
 const move2 = new Film("Roksana - long exposure - black and white", "images/move2.jpg");
-const shanice2 = new Film("Shanice - mushroom girl - lomochrome purple", "images/shanice2.jpg");
+const shanice2 = new Film("Shanice - mushroom girl", "images/shanice2.jpg");
 const r6 = new Film("Roksana - lomochrome turqoise", "images/r6.jpg");
-const q2 = new Film("Roksana - lomochrome turqoise", "images/q2.jpg");
-const q4 = new Film("Quinn - slide film", "images/q2.jpg");
-const p1 = new Film("Polly - black and white", "images/p1.jpg");
-const p3 = new Film("Polly - jar with eyes - long exposure", "images/p3.jpg");
+const q4 = new Film("Quinn on the box", "images/q2.jpg");
+const p1 = new Film("Polly with cigarette", "images/p1.jpg");
+const p3 = new Film("Polly and jar with eyes ", "images/p3.jpg");
 
 renderPhotos();
 
@@ -135,11 +134,16 @@ function renderChart() {
 
     const photoChart = document.getElementById("chart");
     const myChart = new Chart(photoChart, config);
+    setLocalStorage();
+}
+
+function setLocalStorage() {
+    localStorage.setItem("film" JSON.stringify(allPhotos));
 }
 
 function checkLocalStorage() {
     const localFilm = JSON.parse(localStorage.getItem("film"));
-    if (localFilm) {
+    if (local) {
         allPhotos = localFilm;
     } else {
         for (let i = 0; i < newFilmRange.length; i++) {
